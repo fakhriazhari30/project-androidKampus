@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@colors/gray ">
+    android:background="@color/gray">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -183,8 +183,9 @@
 
                     </RelativeLayout>
 
+
                     <Button
-                        android:id="@+id/ke_daftar"
+                        android:id="@+id/register"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
