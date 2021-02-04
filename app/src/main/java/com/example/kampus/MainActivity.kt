@@ -1,5 +1,6 @@
 package com.example.kampus
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -13,9 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-        val username = findViewById<View>(R.id.inuser) as EditText
-        val password = findViewById<View>(R.id.inpass) as EditText
-        val login = findViewById<View>(R.id.btnlgn) as Button
+        val username = findViewById<View>(R.id.email) as EditText
+        val password = findViewById<View>(R.id.password) as EditText
+        val login = findViewById<View>(R.id.masuk) as Button
+        val register = findViewById<View>(R.id.register1) as Button
         login.setOnClickListener {
             val user_name = username.text.toString()
             val pass_ = password.text.toString()
@@ -32,6 +34,10 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
+        }
+
+        register.setOnClickListener {
+            startActivity(Intent(this, com.example.kampus.register::class.java))
         }
     }
 }

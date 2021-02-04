@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/gray">
 
     <RelativeLayout
@@ -29,13 +28,13 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/tvLogin"
+            android:id="@+id/tvRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvDesc"
             android:layout_alignStart="@+id/tvDesc"
             android:elevation="5dp"
-            android:text="Login"
+            android:text="Register"
             android:textColor="@android:color/white"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -115,11 +114,31 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/txtLoginUser"
+                            android:id="@+id/txtUsername"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp">
+
+                            <EditText
+                                android:id="@+id/txusername"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:drawableStart="@drawable/ic_email"
+                                android:hint="     Username"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:textSize="16sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp">
 
                             <EditText
@@ -128,7 +147,7 @@
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="@color/colorPrimaryDark"
                                 android:drawableStart="@drawable/ic_email"
-                                android:hint="     Username"
+                                android:hint="     Email"
                                 android:imeOptions="actionNext"
                                 android:inputType="textEmailAddress"
                                 android:maxLines="1"
@@ -165,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="30dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="100dp"
                         android:layout_marginEnd="30dp">
 
                         <com.google.android.material.button.MaterialButton
@@ -174,7 +193,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="end|bottom"
                             android:layout_margin="8dp"
-                            android:text="Login"
+                            android:text="Register"
                             android:textColor="@android:color/white"
                             android:textSize="16sp"
                             android:theme="@style/Theme.MaterialComponents.Light"
@@ -182,20 +201,6 @@
                             app:cornerRadius="50dp" />
 
                     </RelativeLayout>
-
-
-                    <Button
-                        android:id="@+id/register1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|end"
-                        android:layout_marginEnd="10dp"
-                        android:background="@android:color/transparent"
-                        android:text="@string/button_not_register"
-                        android:textAllCaps="false"
-                        android:textColor="#92A7AB"
-                        android:textSize="12sp"
-                        app:cornerRadius="50dp" />
 
                 </com.google.android.material.card.MaterialCardView>
 
@@ -214,4 +219,4 @@
 
     </RelativeLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</AbsoluteLayout>
