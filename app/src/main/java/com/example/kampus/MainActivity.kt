@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val username = findViewById<View>(R.id.email) as EditText
         val password = findViewById<View>(R.id.password) as EditText
         val login = findViewById<View>(R.id.masuk) as Button
+        val register = findViewById<View>(R.id.register1) as Button
         login.setOnClickListener {
             val user_name = username.text.toString()
             val pass_ = password.text.toString()
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity() {
                     "Username dan Password benar Anda berhasil Login",
                     Toast.LENGTH_SHORT
                 ).show()
-//                startActivity(Intent(this, register::class.java))
             } else {
                 Toast.makeText(
                     applicationContext,
@@ -33,6 +33,10 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
+        }
+
+        register.setOnClickListener {
+            startActivity(Intent(this, com.example.kampus.register::class.java))
         }
     }
 }
