@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
                     "Username dan Password benar Anda berhasil Login",
                     Toast.LENGTH_SHORT
                 ).show()
+                startActivity(Intent(this, com.example.kampus.HomeActivity::class.java))
             } else {
                 Toast.makeText(
                     applicationContext,
