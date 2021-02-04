@@ -8,14 +8,16 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:src="@drawable/home"
         android:text="Hello World!"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="46dp" />
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
     <TextView
@@ -25,18 +27,22 @@
         android:layout_below="@+id/logo"
         android:text="Username :"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="241dp" />
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <EditText
         android:id="@+id/inuser"
-        android:layout_width="294dp"
+        android:layout_width="245dp"
         android:layout_height="43dp"
         android:layout_below="@+id/user"
         android:hint="Username"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="228dp" />
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toRightOf="@id/user"
+        app:layout_constraintTop_toBottomOf="@id/logo"/>
 
     <TextView
         android:id="@+id/pass"
@@ -45,19 +51,22 @@
         android:layout_below="@+id/inuser"
         android:text="Password :"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="297dp" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user"/>
 
     <EditText
         android:id="@+id/inpass"
-        android:layout_width="296dp"
+        android:layout_width="245dp"
         android:layout_height="41dp"
         android:layout_below="@+id/pass"
         android:hint="Password"
         android:inputType="textPassword"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="284dp" />
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/inuser"
+        app:layout_constraintLeft_toRightOf="@id/pass"/>
 
     <Button
         android:id="@+id/btnlgn"
@@ -69,8 +78,10 @@
         android:hint="Login"
         android:textColorHint="#000000"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     tools:context="com.ngodingcoding.login.MainActivity">
 

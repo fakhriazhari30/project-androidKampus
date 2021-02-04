@@ -1,5 +1,6 @@
 package com.example.kampus
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
                     "Username dan Password benar Anda berhasil Login",
                     Toast.LENGTH_SHORT
                 ).show()
+//                startActivity(Intent(this, register::class.java))
             } else {
                 Toast.makeText(
                     applicationContext,
