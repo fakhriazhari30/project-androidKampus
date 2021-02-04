@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="140dp"
+        android:layout_y="50dp"
+        android:text="Registrasi"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="171dp"
+        android:text="UserName"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="159dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="283dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textVisiblePassword"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="296dp"
+        android:text="Password"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="236dp"
+        android:text="Email"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="220dp"
+        android:textSize="16sp"
+        android:hint="Email"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="364dp"
+        android:backgroundTint="@color/conflowerblue"
+        android:text="Registrasi" />
+
+</AbsoluteLayout>
